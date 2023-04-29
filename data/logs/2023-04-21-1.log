@@ -1,0 +1,26 @@
+[04:24:24] [User Authenticator #1/INFO]: UUID of player MoNsTeRoFpEtOrL is cd35ef22-ad4c-4b39-a6d7-93d1d882ac9b
+[04:24:24] [Server thread/INFO]: [examplePlugin] [STDOUT] a player has joined the server
+[04:24:24] [Server thread/WARN]: Nag author(s): '[YelloElefant]' of 'examplePlugin v1.0-SNAPSHOT' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[04:24:24] [Server thread/INFO]: MoNsTeRoFpEtOrL joined the game
+[04:24:24] [Server thread/INFO]: MoNsTeRoFpEtOrL[/203.184.42.37:23951] logged in with entity id 443 at ([world]207.87160809088508, 63.0, -350.1259299876567)
+[04:26:39] [Server thread/INFO]: MoNsTeRoFpEtOrL was slain by Zombie
+[04:31:58] [Server thread/INFO]: MoNsTeRoFpEtOrL drowned
+[04:33:11] [Server thread/INFO]: MoNsTeRoFpEtOrL was slain by Zombie
+[04:42:52] [Server thread/INFO]: 4328
+[04:45:31] [Server thread/INFO]: MoNsTeRoFpEtOrL lost connection: Disconnected
+[04:45:31] [Server thread/INFO]: MoNsTeRoFpEtOrL left the game
+[12:20:09] [User Authenticator #2/INFO]: UUID of player MoNsTeRoFpEtOrL is cd35ef22-ad4c-4b39-a6d7-93d1d882ac9b
+[12:20:09] [Server thread/INFO]: [examplePlugin] [STDOUT] a player has joined the server
+[12:20:09] [Server thread/WARN]: Nag author(s): '[YelloElefant]' of 'examplePlugin v1.0-SNAPSHOT' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[12:20:09] [Server thread/INFO]: MoNsTeRoFpEtOrL joined the game
+[12:20:09] [Server thread/INFO]: MoNsTeRoFpEtOrL[/203.184.42.37:2622] logged in with entity id 5062 at ([world]389.5176722636767, 68.0, -374.18184863523607)
+[12:21:46] [Server thread/INFO]: MoNsTeRoFpEtOrL was shot by Skeleton
+[12:25:56] [Server thread/INFO]: 6399
+[12:31:24] [Server thread/INFO]: MoNsTeRoFpEtOrL has made the advancement [Suit Up]
+[12:40:22] [Server thread/INFO]: Villager EntityVillager['Villager'/10314, uuid='c3c35f86-2e9e-42ed-8f41-0a64af1fb063', l='ServerLevel[world]', x=1453.37, y=100.56, z=-355.28, cpos=[90, -23], tl=191, v=true] died, message: 'Villager suffocated in a wall'
+[12:41:54] [Server thread/INFO]: MoNsTeRoFpEtOrL was doomed to fall by Pillager
+[12:44:44] [Server thread/INFO]: MoNsTeRoFpEtOrL was slain by Spider
+[13:04:40] [Server thread/INFO]: MoNsTeRoFpEtOrL has made the advancement [Sweet Dreams]
+[13:26:54] [Server thread/INFO]: 22477
+[14:03:34] [Server thread/INFO]: MoNsTeRoFpEtOrL lost connection: Disconnected
+[14:03:34] [Server thread/INFO]: MoNsTeRoFpEtOrL left the game

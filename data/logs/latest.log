@@ -1,0 +1,75 @@
+[02:32:15] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:32:16] [ServerMain/INFO]: Loaded 7 recipes
+[02:32:17] [Server thread/INFO]: Starting minecraft server version 1.19.4
+[02:32:17] [Server thread/INFO]: Loading properties
+[02:32:17] [Server thread/INFO]: This server is running Paper version git-Paper-521 (MC: 1.19.4) (Implementing API version 1.19.4-R0.1-SNAPSHOT) (Git: bcec5b1)
+[02:32:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[02:32:17] [Server thread/INFO]: Using 4 threads for Netty based IO
+[02:32:17] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[02:32:17] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[02:32:17] [Server thread/INFO]: Default game type: SURVIVAL
+[02:32:17] [Server thread/INFO]: Generating keypair
+[02:32:17] [Server thread/INFO]: Starting Minecraft server on *:25565
+[02:32:17] [Server thread/INFO]: Using epoll channel type
+[02:32:17] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[02:32:17] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[02:32:18] [Server thread/INFO]: [examplePlugin] Loading server plugin examplePlugin v1.0-SNAPSHOT
+[02:32:18] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[02:32:18] [Server thread/INFO]: Preparing level "world"
+[02:32:18] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:32:18] [Server thread/INFO]: Time elapsed: 116 ms
+[02:32:18] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[02:32:18] [Server thread/INFO]: Time elapsed: 34 ms
+[02:32:18] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[02:32:18] [Server thread/INFO]: Time elapsed: 29 ms
+[02:32:18] [Server thread/INFO]: [examplePlugin] Enabling examplePlugin v1.0-SNAPSHOT
+[02:32:18] [Server thread/ERROR]: Error occurred while enabling examplePlugin v1.0-SNAPSHOT (Is it up to date?)
+java.lang.IllegalArgumentException: Plugin already initialized!
+	at org.bukkit.plugin.java.PluginClassLoader.initialize(PluginClassLoader.java:267) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.init(PluginClassLoader.java:139) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.<init>(JavaPlugin.java:52) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at com.yelloelefant.exampleplugin.ExamplePlugin.<init>(ExamplePlugin.java:11) ~[examplePlugin-1.0-SNAPSHOT.jar:?]
+	at com.yelloelefant.exampleplugin.commands.Commands.<init>(Commands.java:21) ~[examplePlugin-1.0-SNAPSHOT.jar:?]
+	at com.yelloelefant.exampleplugin.ExamplePlugin.onEnable(ExamplePlugin.java:15) ~[examplePlugin-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:279) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:189) ~[paper-1.19.4.jar:git-Paper-521]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.19.4.jar:git-Paper-521]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.enablePlugin(CraftServer.java:555) ~[paper-1.19.4.jar:git-Paper-521]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.enablePlugins(CraftServer.java:466) ~[paper-1.19.4.jar:git-Paper-521]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:638) ~[paper-1.19.4.jar:git-Paper-521]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437) ~[paper-1.19.4.jar:git-Paper-521]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:308) ~[paper-1.19.4.jar:git-Paper-521]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1104) ~[paper-1.19.4.jar:git-Paper-521]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-521]
+	at java.lang.Thread.run(Unknown Source) ~[?:?]
+Caused by: java.lang.IllegalStateException: Initial initialization
+	at org.bukkit.plugin.java.PluginClassLoader.initialize(PluginClassLoader.java:270) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.init(PluginClassLoader.java:139) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.<init>(JavaPlugin.java:52) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at com.yelloelefant.exampleplugin.ExamplePlugin.<init>(ExamplePlugin.java:11) ~[examplePlugin-1.0-SNAPSHOT.jar:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[?:?]
+	at java.lang.reflect.ReflectAccess.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.ReflectionFactory.newInstance(Unknown Source) ~[?:?]
+	at java.lang.Class.newInstance(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:88) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.19.4.jar:git-Paper-521]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.19.4.jar:git-Paper-521]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.19.4.jar:git-Paper-521]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.19.4.jar:git-Paper-521]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.19.4.jar:git-Paper-521]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.loadPlugins(CraftServer.java:423) ~[paper-1.19.4.jar:git-Paper-521]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.19.4.jar:git-Paper-521]
+	... 3 more
+[02:32:18] [Server thread/INFO]: [examplePlugin] Disabling examplePlugin v1.0-SNAPSHOT
+[02:32:18] [Server thread/INFO]: Starting remote control listener
+[02:32:18] [Server thread/INFO]: Thread RCON Listener started
+[02:32:18] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[02:32:18] [Server thread/INFO]: Running delayed init tasks
+[02:32:18] [Server thread/INFO]: Done (1.597s)! For help, type "help"
+[02:32:18] [Server thread/INFO]: Timings Reset
